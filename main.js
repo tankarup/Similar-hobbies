@@ -72,7 +72,7 @@ function show_niteru_idols(idol_name){
     if (niteru_idol.name == idol_name) continue;
     html += `
     <tr>
-      <td><span onclick="set_idol('${niteru_idol.name}');" style="cursor : pointer;">${niteru_idol.name}</span></td>
+      <td><button class="btn btn-outline-primary" type="button" onclick="set_idol('${niteru_idol.name}');">${niteru_idol.name}</button></td>
       <td>${niteru_idol.my_hobby} × ${niteru_idol.idol_hobby}</td>
       <td>${Math.round(niteru_idol.similarity * 100)}%</td>
       <td>${idol_hobbies[niteru_idol.name]['事務所']}</td>
